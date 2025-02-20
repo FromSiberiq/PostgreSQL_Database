@@ -106,7 +106,7 @@ public class NamesGenerator {
 
     public Name generate() {
         Random random = new Random();
-        Boolean isMale = random.nextBoolean();
+        boolean isMale = random.nextBoolean();
 
         if (isMale) {
             Name name = new Name();

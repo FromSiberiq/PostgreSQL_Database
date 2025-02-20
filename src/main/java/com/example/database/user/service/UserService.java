@@ -18,7 +18,9 @@ public class UserService {
         userRepository.deleteAll();
 
         int repeat = 10, dataPerLoop = 10000;
+
         for (int i = 0; i < repeat; i++) {
+
             List<UserEntity> all = new ArrayList<>();
             for (int dataIndex = 0; dataIndex < dataPerLoop; dataIndex++) {
                 NamesGenerator.Name name = namesGenerator.generate();
@@ -32,6 +34,4 @@ public class UserService {
         }
         return true;
     }
-
-
 }
